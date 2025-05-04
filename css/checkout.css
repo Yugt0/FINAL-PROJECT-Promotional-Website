@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f9fb;
+  color: #333;
+}
+
+header {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+nav {
+  background-color: #2c2c2c;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #00bcd4;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s;
+}
+
+nav a:hover {
+  color: #00bcd4;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.checkout-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.billing, .summary {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.billing h2, .summary h2 {
+  margin-top: 0;
+  color: #00bcd4;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input {
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.summary .item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.summary .total {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.checkout-btn {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.checkout-btn:hover {
+  background-color: #009cb1;
+}
+
+footer {
+  background: #1f1f1f;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+  font-size: 0.95rem;
+}

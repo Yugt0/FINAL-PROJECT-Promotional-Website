@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout</title>
+  <link rel="stylesheet" href="/css/checkout.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Checkout</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="terms.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="contact.html">Contact</a>
+    <a href="team.html">Our Team</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="checkout.html">Check Out</a>
+
+
+  </nav>
+
+  <main class="checkout-container">
+    <section class="billing">
+      <h2>Billing Information</h2>
+      <form>
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="John Doe" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="john@example.com" required>
+
+        <label for="address">Address</label>
+        <input type="text" id="address" placeholder="123 Main St" required>
+
+        <label for="city">City</label>
+        <input type="text" id="city" placeholder="New York" required>
+
+        <label for="zip">ZIP Code</label>
+        <input type="text" id="zip" placeholder="10001" required>
+      </form>
+    </section>
+
+    <section class="summary">
+      <h2>Order Summary</h2>
+      <div class="item">
+        <p>Oil Change</p>
+        <span>$50</span>
+      </div>
+      <div class="item">
+        <p>Brake Inspection</p>
+        <span>$30</span>
+      </div>
+      <div class="item total">
+        <strong>Total</strong>
+        <strong>$80</strong>
+      </div>
+      <button class="checkout-btn">Place Order</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Throttle Deals. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
