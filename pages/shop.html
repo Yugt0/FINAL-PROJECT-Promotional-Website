@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop - Motorcycle Shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="../css/shop.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Motorcycle Shop</div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="shop-banner">
+      <div class="banner-overlay"></div>
+      <div class="banner-content">
+        <h1>Welcome to Our Shop</h1>
+        <p>Find your dream motorcycle today.</p>
+      </div>
+    </div>
+
+    <h2 class="page-title">Our Products</h2>
+
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/400x200" alt="Motorcycle 1" class="product-image">
+        <div class="product-details">
+          <h3>Yamaha MT-15</h3>
+          <p>155cc, lightweight, and aggressive styling for urban riding.</p>
+          <div class="price">$3,500</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/400x200" alt="Motorcycle 2" class="product-image">
+        <div class="product-details">
+          <h3>Kawasaki Ninja 400</h3>
+          <p>Performance and comfort combined in a sporty ride.</p>
+          <div class="price">$4,800</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/400x200" alt="Motorcycle 3" class="product-image">
+        <div class="product-details">
+          <h3>Honda CBR500R</h3>
+          <p>Perfect for beginners and pros, with great handling.</p>
+          <div class="price">$6,000</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/400x200" alt="Motorcycle 4" class="product-image">
+        <div class="product-details">
+          <h3>Suzuki GSX-R600</h3>
+          <p>Race-ready performance and iconic style.</p>
+          <div class="price">$7,200</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-links").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
+
