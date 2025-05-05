@@ -23,6 +23,7 @@
           <li><a href="pages/login.html">Login</a></li>
           <li><a href="cart.html">Cart</a></li>
         </ul>
+        <div class="hamburger">☰</div>
       </nav>
     </div>
   </header>
@@ -59,4 +60,9 @@
   </section>
 
 </body>
+<script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('show');
+    });
+</script>
 </html>

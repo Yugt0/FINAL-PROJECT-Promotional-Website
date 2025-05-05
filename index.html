@@ -23,6 +23,7 @@
           <li><a href="pages/login.html">Login</a></li>
           <li><a href="pages/cart.html">Cart</a></li>
         </ul>
+        <div class="hamburger">☰</div>
       </nav>
     </div>
   </header>
@@ -61,4 +62,10 @@
   </section>
 
 </body>
+<script>
+  // Mobile menu toggle
+  document.querySelector('.hamburger').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('show');
+  });
+</script>
 </html>
