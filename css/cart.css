@@ -1,5 +1,4 @@
- /* Base Reset */
- * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -53,7 +52,7 @@
   }
 
   .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 40px auto;
     background: #fff;
     padding: 30px;
@@ -63,54 +62,47 @@
 
   .page-title {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
-  .auth-container form {
+  .cart-item {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
   }
 
-  .form-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+  .cart-item span {
+    font-size: 1.1em;
   }
 
-  .form-group {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-
-  label {
-    margin-bottom: 5px;
+  .cart-total {
+    text-align: right;
+    margin-top: 20px;
     font-weight: bold;
+    font-size: 1.2em;
   }
 
-  input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-
-  button {
+  .checkout-btn {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    padding: 15px;
     background-color: #111;
-    color: #fff;
-    padding: 12px;
+    color: white;
     border: none;
     border-radius: 5px;
     font-size: 1em;
-    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
     transition: background-color 0.3s;
   }
 
-  button:hover {
+  .checkout-btn:hover {
     background-color: #f39c12;
   }
 
-  /* Responsive Styles */
   @media (max-width: 768px) {
     .nav-links {
       flex-direction: column;
@@ -128,7 +120,13 @@
       display: block;
     }
 
-    .form-row {
+    .cart-item {
       flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .cart-total, .checkout-btn {
+      text-align: center;
     }
   }
